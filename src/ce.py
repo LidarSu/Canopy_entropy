@@ -40,7 +40,7 @@ def cal_entropy(pts, is_resample=True, bandwidth=0.2, grid_size=0.1, is_fig=Fals
     c_entropys = []
     bw = bandwidth
     for axis_0, axis_1 in zip([0, 0, 1], [1, 2, 2]):
-        print('{}{}'.format('xyz'[axis_0], 'xyz'[axis_1]))
+        # print('{}{}'.format('xyz'[axis_0], 'xyz'[axis_1]))
         kde = KernelDensity(kernel='gaussian', bandwidth=bw, rtol=0.001).fit(pts[:, [axis_0, axis_1]])
         if grid_size is None:
             grid_size = bw
@@ -86,8 +86,3 @@ if __name__ == '__main__':
     c_entropys = cal_entropy(pts, is_fig=True, fig_path=os.path.join('../data', 'figure/test'))
     # Saving calculated canopy entropy to file
     c_entropys.to_csv('../data/test.csv', index=False)
-
-    # Calculating canopy entropy
-    c_entropys = cal_entropy(pts, is_resample=False, is_fig=True, fig_path=os.path.join('../data', 'figure/test_nosample'))
-    # Saving calculated canopy entropy to file
-    c_entropys.to_csv('../data/test_nosample.csv', index=False)
