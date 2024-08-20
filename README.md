@@ -6,4 +6,4 @@ The source code for calculating CE is provided here, and can be downloaded freel
 ![Illustration](./data/Illustration.jpg)
 
 # Reference
-Xiaoqiang Liu, Qin Ma, Xiaoyong Wu, Tianyu Hu, Zhonghua Liu, Lingli Liu, Qinghua Guo, Yanjun Su, 2022, A novel entropy-based method to quantify forest canopy structural complexity from multiplatform lidar point clouds. Remote Sensing of Environment.
+Xiaoqiang Liu, Qin Ma, Xiaoyong Wu, Tianyu Hu, Zhonghua Liu, Lingli Liu, Qinghua Guo, Yanjun Su, 2022, A novel entropy-based method to quantify forest canopy structural complexity from multiplatform lidar point clouds. Remote Sensing of Environment, 282, 113280.
